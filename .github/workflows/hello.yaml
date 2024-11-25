@@ -12,4 +12,4 @@ jobs:
 
      - run: echo "Hello, world"
 
-     - uses: actions/chechout@v4
+     - uses: actions/checkout@v4
