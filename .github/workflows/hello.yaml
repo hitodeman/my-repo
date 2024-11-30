@@ -10,6 +10,7 @@ jobs:
 
     steps:
 
-     - run: echo "Hello, world"
+     - run: echo "Hello, world. ${{github.actor}}"
 
-     - uses: actions/checkout@v4 
+     - uses: actions/checkout@v4
+      
