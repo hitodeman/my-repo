@@ -12,10 +12,12 @@ jobs:
 
      - run: echo "github.actor => ${{github.actor}}"
      - run: echo "GITHUB_ACTOR => ${GITHUB_ACTOR}" 
+     - uses: actions/checkout@v4
+     - run: echo "${GITHUB_ACTOR}"
      - run: echo "github.action => ${{github.action}}"
      - run: echo "github.action_repository => ${{github.action_repository}}" 
      - run: echo "github.job => ${{github.job}}" 
      - run: echo "github.repository => ${{github.repository}}"
      - run: echo "github.repository_owner => ${{github.repository_owner}}"  
-     - uses: actions/checkout@v4
+    
       
