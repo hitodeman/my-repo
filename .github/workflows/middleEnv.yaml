@@ -5,5 +5,9 @@ jobs:
       runs-on: ubuntu-latest
       env:
         ACTOR: ${{github.actor}}
+        USERNAME: ${{vars.USERNAME}}
+        USERNAME_GH: ${{vars.USERNAME_GH}}
       steps:
         - run: echo "${ACTOR}"
+        - run: echo "${USERNAME}"
+        - run: echo "${USERNAME_GH}"
