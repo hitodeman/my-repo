@@ -1,0 +1,16 @@
+name: Comment
+run-name: Run by @${{ github.actor }}
+on: pull_request
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    permissions: 
+      pull-requests: write
+      contents: read
+    steps:
+      - name: checkout
+        uses: action/checkout@v4
+      - name: command execute
+        run: gh pr comment "${GITHUB_HEAD_REF}" --body "Hello, ${GITHUB_ACTOR}"
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
