@@ -9,7 +9,7 @@ jobs:
       contents: read
     steps:
       - name: checkout
-        uses: action/checkout@v4
+        uses: actions/checkout@v4
       - name: command execute
         run: gh pr comment "${GITHUB_HEAD_REF}" --body "Hello, ${GITHUB_ACTOR}"
         env: 
