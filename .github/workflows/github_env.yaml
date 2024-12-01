@@ -1,0 +1,11 @@
+name: GITHUB_ENV
+run-name: RUN by @${{ github.actor }}
+on: push
+jobs:
+  share:
+    runs-on: ubuntu-latest
+    steps:
+      - name: write GITHUB_ENV
+        run: echo "RESULT=Hello" >> "${GITHUB_ENV}"
+      - name: print GITHUB_ENV(RESULT)
+        run: echo "${RESULT}"
