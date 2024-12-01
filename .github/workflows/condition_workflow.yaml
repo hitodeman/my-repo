@@ -2,7 +2,7 @@ name: Condition Workflow
 on: push
 jobs:
   skip-or-run:
-    if: ${{ github.actor == 'octocat' }}
+    if: ${{ github.actor == 'hitodeman' }}
     runs-on: ubuntus-latest
     steps:
-      - run: echo "github.actor == octocatのため実行されました"
+      - run: echo "github.actor == hitodemanのため実行されました"
