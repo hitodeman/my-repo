@@ -1,4 +1,4 @@
-@[figma](https://www.figma.com/files/team/1440146361004093722/drafts?fuid=1440146359211881782)
+@[figma](https://www.figma.com/design/HFpUo0T8ZAwG7sQBzwp8v8/App-Design?node-id=0-1&t=JNHNhoSYM6Za79oV-1)
 
 ```mermaid
     sequenceDiagram
