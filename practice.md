@@ -10,7 +10,9 @@
         John-->>Alice: Great!
         John->>Bob: How about you?
         Bob-->>John: Jolly good!
+```
 
+```mermaid
     graph TD;
         A-->B;
         A-->C;
